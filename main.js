@@ -124,8 +124,8 @@ console.log(array4);
 
 // 18. Remove "Sparky" and "White" from the above array of arrays.
 console.log('Question 18');
-array4
-array4 = [array1.splice(4,1), array2, array3.splice(1,1)];
+array4[0].pop();
+array4[2].shift();
 console.log(array4);
 
 // BONUS 1: Try to arrange the following items from smallest to largest:
