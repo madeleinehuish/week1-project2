@@ -50,7 +50,7 @@ console.log(combinedThings);
 // 8. Declare a variable called lastItem using .pop() on the things array.
 //    Add two new items to lastItem, one at the beginning and one at the end.
 console.log('Question 8');
-var lastItem = things.pop();
+var lastItem = [things.pop()];
 lastItem.push('computer');
 lastItem.unshift('phone');
 console.log(lastItem);
@@ -62,8 +62,15 @@ var itemLast = lastItem.reverse();
 console.log (itemLast);
 
 // 10. Remove the first item of itemLast.
+console.log('Question 10');
+itemLast.shift();
+console.log(itemLast);
+
 
 // 11. Remove all items from itemLast.
+console.log('Question 11');
+itemLast.length = 0;
+console.log(itemLast);
 
 // 12. Using the Arrays below, create a single Array
 //     called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
